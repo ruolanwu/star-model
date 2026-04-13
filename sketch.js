@@ -18,9 +18,9 @@ function draw() {
 
   rotateX(angleX);
   rotateY(angleY);
-  rotateZ(HALF_PI);
 
-  scale(1);
+  rotateY(HALF_PI);
+
   model(model3D);
 }
 
