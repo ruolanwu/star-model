@@ -21,6 +21,8 @@ function draw() {
   rotateX(rotX);
   rotateY(rotY + HALF_PI);
 
+  ambientMaterial(255);
+
   model(model3D);
 }
 
