@@ -12,15 +12,13 @@ function setup() {
 function draw() {
   background(0);
 
-  ambientLight(120);
-  directionalLight(255, 255, 255, 0.5, 1, -0.5);
-
   let rotY = map(mouseX, 0, width, -PI, PI);
-  let rotX = map(mouseY, 0, height, -PI, PI);
+  let rotX = map(mouseY, 0, height, PI, -PI);
 
   rotateX(rotX);
   rotateY(rotY + HALF_PI);
 
+  ambientLight(255);
   ambientMaterial(255);
 
   model(model3D);
