@@ -15,8 +15,11 @@ function draw() {
   background(0);
   ambientLight(120);
   directionalLight(255, 255, 255, 0.5, 1, -0.5);
+
   rotateX(angleX);
   rotateY(angleY);
+  rotateZ(HALF_PI);
+
   scale(1);
   model(model3D);
 }
